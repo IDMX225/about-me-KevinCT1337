@@ -4,39 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>I'm a title!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>About Me!</title>
 </head>
 
 <body>
 
-    <h1>Hello World!</h1>
+    <header>
 
-    <p>Praesent ultricies sit amet nibh et mattis. Donec ornare urna sit amet blandit gravida. In hac habitasse platea
-        dictumst. Cras quis accumsan nisl. Phasellus commodo ante nec tempus bibendum. Proin rutrum lorem at orci
-        laoreet malesuada. Vivamus ut risus porta, porttitor orci eget, laoreet nisl.</p>
+        <!--header section-->
 
-    <p>Proin viverra in dui at tincidunt. Suspendisse vel orci vitae augue aliquet dictum vitae at lectus. Fusce sed
-        pulvinar enim. Quisque ut orci ac neque ornare porta ut ut ipsum. Etiam porta ultrices metus, vitae sagittis sem
-        suscipit nec. Nunc venenatis enim a augue aliquam interdum. Curabitur placerat lobortis sodales. Sed laoreet
-        magna eget libero consectetur malesuada id nec magna. Donec est dui, iaculis nec condimentum ac, imperdiet et
-        libero.</p>
+        <!--Photo by <a href="https://unsplash.com/@twoluckyspoons?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jodie Morgan</a> on <a href="https://unsplash.com/photos/waffle-on-gray-ceramic-plate-v4IwVaaxoFo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          -->
+        <div class="container">
+            <img src="images/waffle.jpg" alt="A tasty waffle">
+        </div>
 
-    <p>Nullam ut enim eget nibh mollis laoreet id sed nisi. Proin vulputate sed mi ut pellentesque. Nunc accumsan,
-        turpis eu volutpat condimentum, felis arcu lacinia dolor, vel dignissim enim est nec ex. Morbi vehicula quam at
-        mi rutrum rutrum feugiat vel ante. Duis semper fermentum velit. Donec in augue vel arcu semper sollicitudin ac
-        id risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <h1>Welcome to all about me!</h1>
 
-    <p>The End!</p>
+    </header>
 
-    <div class="container">
-        <img src="./images/dummy.jpg" alt="STUPID DUMMY" width="800px" height="200px" id="my-image">
-    </div>
+    <main>
 
-    <div class="container">
-        <button id="play-sound">Play Sound</button>
-        <button id="change-image">Change Image</button>
-    </div>
+        <section>
+
+            <!--bio section-->
+            <div>
+                <h2>A few things about me</h2>
+
+                <p>My name is Kevin Cox-Torrelio, and I'm a student attending here, at RVCC 🏫</p>
+
+                <p>I have 2 dogs and a cat, one dog is a Labradoodle, and the other is a Shorkie. And well, my cat is a
+                    pretty generic grey house cat. 🐕🐈</p>
+
+                <p>I program my own games, and occasionally some simple scripts on the side for small projects, nothing
+                    too fancy 💻</p>
+
+                <p>Here are a few other goals I have achieved so far:</p>
+
+                <ul>
+                    <li>Survive childhood</li>
+                    <li>Survive Middle School</li>
+                    <li>Survive High School</li>
+                    <li>Get into College</li>
+                    <li>Get a job</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <div class="container">
+            <img src="./images/dummy.jpg" alt="A picture with two sides" width="300px" height="300px"
+                id="changing-image">
+        </div>
+
+        <div class="container">
+            <button id="play-sound">Play Sound</button>
+            <button id="change-image">Change Image</button>
+        </div>
+
+    </main>
+
+
 
 
     <script>
@@ -45,7 +75,7 @@
         const changeImageButton = document.getElementById('change-image');
 
 
-        const myImageObject = document.getElementById("my-image");
+        const myImageObject = document.getElementById("changing-image");
         let originalImageSource = myImageObject.src;
 
 
@@ -56,7 +86,7 @@
         });
 
         changeImageButton.addEventListener('click', () => {
-            const newImageSource = "./images/stupid.png";
+            const newImageSource = "./images/emergencyCat.png";
 
 
             setTimeout(() => {

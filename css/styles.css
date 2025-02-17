@@ -14,7 +14,7 @@ body {
   }
   
   img {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     margin: 5px auto; /* Center the image horizontally */
     border-radius: 5px; /* Add a rounded corner effect */
