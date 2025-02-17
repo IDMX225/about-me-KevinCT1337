@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>I'm a title!</title>
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+
+    <p>Praesent ultricies sit amet nibh et mattis. Donec ornare urna sit amet blandit gravida. In hac habitasse platea
+        dictumst. Cras quis accumsan nisl. Phasellus commodo ante nec tempus bibendum. Proin rutrum lorem at orci
+        laoreet malesuada. Vivamus ut risus porta, porttitor orci eget, laoreet nisl.</p>
+
+    <p>Proin viverra in dui at tincidunt. Suspendisse vel orci vitae augue aliquet dictum vitae at lectus. Fusce sed
+        pulvinar enim. Quisque ut orci ac neque ornare porta ut ut ipsum. Etiam porta ultrices metus, vitae sagittis sem
+        suscipit nec. Nunc venenatis enim a augue aliquam interdum. Curabitur placerat lobortis sodales. Sed laoreet
+        magna eget libero consectetur malesuada id nec magna. Donec est dui, iaculis nec condimentum ac, imperdiet et
+        libero.</p>
+
+    <p>Nullam ut enim eget nibh mollis laoreet id sed nisi. Proin vulputate sed mi ut pellentesque. Nunc accumsan,
+        turpis eu volutpat condimentum, felis arcu lacinia dolor, vel dignissim enim est nec ex. Morbi vehicula quam at
+        mi rutrum rutrum feugiat vel ante. Duis semper fermentum velit. Donec in augue vel arcu semper sollicitudin ac
+        id risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+    <p>The End!</p>
+
+    <div class="container">
+        <img src="./images/dummy.jpg" alt="STUPID DUMMY" width="800px" height="200px" id="my-image">
+    </div>
+
+    <div class="container">
+        <button id="play-sound">Play Sound</button>
+        <button id="change-image">Change Image</button>
+    </div>
+
+
+    <script>
+
+        const playButton = document.getElementById('play-sound');
+        const changeImageButton = document.getElementById('change-image');
+
+
+        const myImageObject = document.getElementById("my-image");
+        let originalImageSource = myImageObject.src;
+
+
+
+        playButton.addEventListener('click', () => {
+            const sound = new Audio('./sounds/bababooey.mp3');
+            sound.play();
+        });
+
+        changeImageButton.addEventListener('click', () => {
+            const newImageSource = "./images/stupid.png";
+
+
+            setTimeout(() => {
+                myImageObject.src = originalImageSource;
+            }, 1000)
+
+            myImageObject.src = newImageSource;
+
+        });
+
+    </script>
+
+</body>
+
+</html>

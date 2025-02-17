@@ -1,0 +1,31 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #00698f;
+    text-align: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding-top: 20px; /* Add some space above the image */
+  }
+  
+  img {
+    max-width: 50%;
+    height: auto;
+    margin: 5px auto; /* Center the image horizontally */
+    border-radius: 5px; /* Add a rounded corner effect */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px; /* Add some space between the image and buttons */
+  }
