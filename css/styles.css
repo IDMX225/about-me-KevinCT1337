@@ -1,31 +1,58 @@
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-  }
+  background-color: #E68E67;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #f8d9bd;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #E67867;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, li{
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.subheader {
+  font-weight: 500;
+}
+
+.container {
+  text-align: center;
+  padding-top: 20px;
   
-  h1 {
-    color: #00698f;
-    text-align: center;
-  }
-  
-  .container {
-    text-align: center;
-    padding-top: 20px; /* Add some space above the image */
-  }
-  
-  img {
-    max-width: 30%;
-    height: auto;
-    margin: 5px auto; /* Center the image horizontally */
-    border-radius: 5px; /* Add a rounded corner effect */
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 20px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 5px; /* Add some space between the image and buttons */
-  }
+}
+
+.maininfo {
+  background-color: #E67867;
+  padding: 1rem;
+}
+
