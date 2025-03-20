@@ -1,13 +1,13 @@
 body {
-  background-color: #E68E67;
+  background-color: #7891F5;
   font-family: Arial, sans-serif;
 }
 
 h1, h2 {
-  color: #f8d9bd;
+  color: #FFF;
   text-align: center;
-  font-family: "Merriweather", serif;
-  font-weight: 900;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -19,7 +19,7 @@ img {
 }
 
 button {
-  background-color: #E67867;
+  background-color: #78B8F5;
   color: #fff;
   padding: 20px 30px;
   border: none;
@@ -27,32 +27,44 @@ button {
   cursor: pointer;
   margin-top: 5px;
 
-  font-family: "Newsreader", serif;
+  font-family: "Rowdies", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
 p, li{
-  font-family: "Newsreader", serif;
+  font-family: "Rowdies", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   color: #ffffff;
 }
 
+.primaryHeader {
+  font-size: 4rem;
+}
+
 .subheader {
+  color: #FFF;
   font-weight: 500;
 }
 
 .container {
   text-align: center;
   padding-top: 20px;
+  margin: 1rem;
   
 }
 
 .maininfo {
-  background-color: #E67867;
+  background-color: #78B8F5;
   padding: 1rem;
+}
+
+.footerInfo {
+  background-color: #78B8F5;
+  padding: 1rem;
+  text-align: center;
 }
 
