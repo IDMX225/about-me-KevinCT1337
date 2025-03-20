@@ -59,7 +59,8 @@ p, li{
 
 .maininfo {
   background-color: #78B8F5;
-  padding: 1rem;
+  padding: 2rem;
+  margin: 50px
 }
 
 .footerInfo {
@@ -68,3 +69,13 @@ p, li{
   text-align: center;
 }
 
+
+#hobbies {
+  background-color: #78B8F5;
+  padding: 1rem;
+  margin: 50px;
+}
+#hobbies ul {
+  color: #FFF;
+  background-color: #78B8F5;
+}
