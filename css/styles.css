@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6{
   color: #FFF;
   text-align: center;
   font-family: "Caveat", cursive;
@@ -33,7 +33,13 @@ button {
   font-style: normal;
 }
 
-p, li{
+blockquote {
+  font-size: 1em;
+  line-height: 150%;
+  color: grey;
+}
+
+p, li {
   font-family: "Rowdies", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -70,6 +76,8 @@ p, li{
 }
 
 
+/* Hobbies */
+
 #hobbies {
   background-color: #78B8F5;
   padding: 1rem;
@@ -78,4 +86,22 @@ p, li{
 #hobbies ul {
   color: #FFF;
   background-color: #78B8F5;
+}
+
+
+/* Gallery */
+
+#gallery {
+  border: 3px solid #7891F5;
+}
+
+#gallery img {
+  max-width: 100%;
+
+}
+
+#gallery figure {
+  text-align: center;
+  color: #3f4750;
+  font-size: 130%;
 }

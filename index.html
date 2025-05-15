@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!--
+
+Copyright references
+
+For sound effects
+https://pixabay.com/service/license-summary/
+
+For images
+https://unsplash.com/license
+
+
+
+
+
+sounds/catMeow.mp3
+https://pixabay.com/sound-effects/cat-meow-14536/
+
+img/waffle.jpg
+Photo by <a href="https://unsplash.com/@twoluckyspoons?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jodie Morgan</a> on <a href="https://unsplash.com/photos/waffle-on-gray-ceramic-plate-v4IwVaaxoFo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+img/cat-hiding-in-box-640w.jpg
+Photo by <a href="https://unsplash.com/@iam_os?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">iam_os</a> on <a href="https://unsplash.com/photos/white-kitten-in-brown-cardboard-box-pMidin9x1nE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+img/blank-cardboard-box-640w.jpg
+Photo by <a href="https://unsplash.com/@melodi2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lia Trevarthen</a> on <a href="https://unsplash.com/photos/black-and-silver-usb-flash-drive-in-brown-box-gWvdUpNQr6g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+
+
+-->
+
+
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rowdies:wght@300;400;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rowdies:wght@300;400;700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>About Me!</title>
+
 </head>
 
 <body>
 
+    <!--Header section, for primary elements to display-->
     <header>
 
-        <!--header section-->
+        
+        <section id="primaryHeader">
 
-        <!--Photo by <a href="https://unsplash.com/@twoluckyspoons?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jodie Morgan</a> on <a href="https://unsplash.com/photos/waffle-on-gray-ceramic-plate-v4IwVaaxoFo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-          -->
-        <div class="container">
-            <img src="img/waffle.jpg" alt="A tasty waffle">
-        </div>
+            <div id="primaryImageHeader">
+                <img src="img/waffle.jpg" alt="A tasty waffle">
+            </div>
+    
+            <h1 id="primaryTitleHeader">Welcome to all about me!</h1>
 
-        <h1 class="primaryHeader">Welcome to all about me!</h1>
+        </section>
 
     </header>
 
+
+    <!--Main body, where most of the about me content goes in-->
     <main>
 
-        <section>
+        <section id="biography">
 
             <!--bio section-->
             <div class="maininfo">
@@ -81,9 +116,45 @@
 
         </section>
 
+        <section id="gallery">
+
+            <h2>
+                My Photo Gallery of Silly Images
+            </h2>
+
+            <hr>
+
+            <figure>
+                <img src="img/3d-printed-objects.jpg" alt="Three, 3d-printed objects">
+                <figcaption>A few 3d-printed objects I printed out</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/circuit-electronics-640w.jpg" alt="An image of a few microelectronics and wires">
+                <figcaption>A few microelectronic components I use for projects</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/ps4-controller-640w.jpg" alt="A PS4 Controller">
+                <figcaption>I game on the PS4, so here's a controller of mine</figcaption>
+            </figure>
+
+        </section>
+
+        <article>
+            <h2>
+                <div>
+
+                </div>
+            </h2>
+        </article>
+
         <div class="container">
-            <img src="./img/dummy.jpg" alt="A picture with two sides" width="300px" height="300px"
-                id="changing-image">
+            <img src="img/blank-cardboard-box-640w.jpg" alt="A blank cardboard box" width="300px" height="300px" id="changing-image">
         </div>
 
         <div class="container">
@@ -94,16 +165,21 @@
     </main>
 
 
+    <!--Footer section, to display my name, copyright, and navigable links-->
     <footer>
-        <section>
+        <section id="docFooter">
 
             <!--bio section-->
             <div class="footerInfo">
-                <p>By Kevin Cox-Torrelio (Copyrighted)</p>
+                <p>© By Kevin Cox-Torrelio</p>
             </div>
 
         </section>
     </footer>
+
+
+
+    <!--Primary javascript code for website functionality-->
 
     <script>
 
@@ -117,12 +193,12 @@
 
 
         playButton.addEventListener('click', () => {
-            const sound = new Audio('./sounds/bababooey.mp3');
+            const sound = new Audio('./sounds/catMeow.mp3');
             sound.play();
         });
 
         changeImageButton.addEventListener('click', () => {
-            const newImageSource = "./img/emergencyCat.png";
+            const newImageSource = "./img/cat-hiding-in-box-640w.jpg";
 
 
             setTimeout(() => {
