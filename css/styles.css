@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6{
   font-family: "Caveat", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 40pt;
 }
 
 img {
@@ -39,7 +40,7 @@ blockquote {
   color: grey;
 }
 
-p, li {
+p, li, figcaption{
   font-family: "Rowdies", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -97,11 +98,31 @@ p, li {
 
 #gallery img {
   max-width: 100%;
-
+  
 }
 
 #gallery figure {
   text-align: center;
-  color: #3f4750;
+  color: #1a1f24 !important;
   font-size: 130%;
+}
+
+/* Literature */
+
+#lit {
+  border: 2px solid #3f4750;
+  margin-bottom: 2rem;
+
+}
+
+#lit div {
+  padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+
+}
+
+#lit div p {
+  padding: 0.5rem 0;
+  font-size: 20pt;
 }
