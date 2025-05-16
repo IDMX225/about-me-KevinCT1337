@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6{
   font-size: 40pt;
 }
 
+h2 {
+    margin: 0.1em;
+}
+
 img {
   max-width: 30%;
   height: auto;
@@ -48,8 +52,10 @@ p, li, figcaption{
   color: #ffffff;
 }
 
-.primaryHeader {
+.primaryHeader img {
   font-size: 4rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .subheader {
@@ -79,10 +85,13 @@ p, li, figcaption{
 
 /* Hobbies */
 
-#hobbies {
+section#hobbies {
   background-color: #78B8F5;
   padding: 1rem;
   margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #hobbies ul {
   color: #FFF;
@@ -98,7 +107,7 @@ p, li, figcaption{
 
 #gallery img {
   max-width: 100%;
-  
+
 }
 
 #gallery figure {
@@ -122,7 +131,18 @@ p, li, figcaption{
 
 }
 
-#lit div p {
-  padding: 0.5rem 0;
-  font-size: 20pt;
+
+@media screen and (min-width: 60em){
+  figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
 }
